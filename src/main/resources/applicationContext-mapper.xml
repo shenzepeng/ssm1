@@ -29,7 +29,7 @@
         <!-- 设置数据源 -->
         <property name="dataSource" ref="dataSource"/>
         <!-- 设置类型别名 (采用包扫描) -->
-        <property name="typeAliasesPackage" value="com.xxx.pojo"/>
+        <property name="typeAliasesPackage" value="com.pojo"/>
         <!-- 设置mybatis-config.xml -->
         <property name="configLocation" value="classpath:mybatis-config.xml"/>
         <!-- 设置SQL映射文件
@@ -42,7 +42,7 @@
         bean的id: 默认为接口的类名，首字母小写
     -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.xxx.mapper"/>
+        <property name="basePackage" value="com.mapper"/>
     </bean>
 
     <!-- 配置数据源事务管理器(DataSourceTransactionManager) -->
